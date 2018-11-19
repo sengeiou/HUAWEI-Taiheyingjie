@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".personal.widget.PersonalFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4590E9"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo1"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="用户中心"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#ffffff"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="张琦"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_my_header"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="张琦"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/header"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:text="长沙泰和英杰系统集成工程有限责任公司"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="电话"
+            android:textSize="16sp"
+            android:textColor="#212121" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18175136670"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:layout_marginRight="4dp"/>
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="修改密码"
+            android:textSize="16sp"
+            android:textColor="#212121"/>
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/right" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="退出登录"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:layout_marginTop="14dp"/>
+
+</LinearLayout>

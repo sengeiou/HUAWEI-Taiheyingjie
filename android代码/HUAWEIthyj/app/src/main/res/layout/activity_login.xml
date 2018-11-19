@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_above="@+id/input"
+        android:src="@drawable/logo" />
+
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/bg_login_edittext"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="username"
+            android:textSize="18sp"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#A4A5A8" />
+
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:gravity="center_vertical"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@null"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/bg_login_btn"
+        android:text="登  录"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+</RelativeLayout>

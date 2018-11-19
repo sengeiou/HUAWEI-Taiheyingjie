@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="#ffffff"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/image_news"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_news"
+        android:text="江西高成科技发展有限公司"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/image_news"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="巡检"
+            android:textSize="8sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/lable"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张琦(联系人)"
+            android:textSize="14sp"
+            android:textColor="#919191" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18175136650"
+            android:textSize="14sp"
+            android:textColor="#919191"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+</RelativeLayout>
